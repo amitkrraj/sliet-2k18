@@ -889,7 +889,11 @@ section
 .contact_map
 {
 	width: 100%;
-	height: 692px;
+	max-height: 300px;
+	position: absolute;
+	margin-top: 35px;
+	margin-bottom: 35px;
+	overflow: hidden;
 }
 .map
 {
