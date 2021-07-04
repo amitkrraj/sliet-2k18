@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+
+.updating {
+	position: relative;
+  display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.updating h2 {
+	position: absolute;
+	transform: translate(-50%,-50%);
+	font-size: 6em;
+  font-family: 'Playfair Display', serif;
+}
+.updating h2:nth-child(1) {
+	color: transparent;
+	-webkit-text-stroke: 4px #000;
+}
+.updating h2:nth-child(2) {
+	color: #0077be;
+	animation: wave 2s ease-in-out infinite;
+}
+@keyframes wave {
+	0%,100%
+	{
+		clip-path: polygon(0 42%, 13% 48%, 26% 55%, 41% 64%, 56% 65%, 69% 58%, 84% 45%, 100% 38%, 100% 100%, 0% 100%);
+	}
+	50%
+	{
+		clip-path: polygon(0 63%, 14% 57%, 25% 50%, 40% 42%, 56% 40%, 71% 44%, 84% 50%, 100% 60%, 100% 100%, 0% 100%);
+	}
+}
