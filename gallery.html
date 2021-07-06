@@ -113,9 +113,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
     <!-- Gallery Body -->
 
-      <div class="gallery_body">
-        <div class="gallery">
-            <ul class="controls">
+      <div class="gallery_body" id="navigatehere">
+        <div class="gallery" id="navigatehere">
+            <ul class="controls" id="navigatehere">
                 <li class="buttons active" data-filter="all">all</li>
                 <li class="buttons" data-filter="ice-cream">party</li>
                 <li class="buttons" data-filter="chocolate">hostel</li>
@@ -185,6 +185,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
         </div>
     </div>
+
+	<input type="button" onclick="goto('navigatehere')" value="Replay">
+	<button onclick="window.location='#navigatehere'">Button</button>
 
 	<div class="row load_more_row">
 		<div class="col">
