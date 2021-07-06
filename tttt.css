@@ -1,17 +1,11 @@
-*
-{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body
+.imganimation
 {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
 }
-.box
+.imgbox
 {
   position: relative;
   width: 200px;
@@ -30,7 +24,7 @@ body
     transform: perspective(1000px) rotateY(360deg);
   }
 }
-.box span
+.imgbox span
 {
   position: absolute;
   top: 0;
@@ -41,7 +35,7 @@ body
   transform-style: preserve-3d;
   transform: rotateY(calc(var(--i)*45deg)) translateZ(400px);
 }
-.box span img
+.imgbox span img
 {
   position: absolute;
   top: 0;
@@ -50,10 +44,3 @@ body
   height: 100%;
   object-fit: cover;
 }
-
-
-
-
-
-
-
