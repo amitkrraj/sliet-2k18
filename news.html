@@ -14,6 +14,7 @@
 <link rel="stylesheet" type="text/css" href="styles/destinations.css">
 <link rel="stylesheet" type="text/css" href="styles/destinations_responsive.css">
 <link rel="stylesheet" type="text/css" href="styles/index.css">
+<link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css">
 </head>
 <body>
 
@@ -110,147 +111,110 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 		<div class="background_image" style="width:100% ; background-image:url(images/home_slider.jpg)"></div>
 	</div>
 
-	<!-- Destinations -->
+  <!-- Images -->
 
-	<div class="destinations" id="destinations">
-		<div class="container">
+<section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <center>
+      <div class="section_title"><h2 style="font-size:x-large;">Some Beautiful Memories caught in Camera on 24th Jan, 2020</h2></div>
+    </center>
+    <br> <br>
+    <div class="flex flex-col">
+      <div class="h-1 bg-gray-200 rounded overflow-hidden">
+        <div class="w-24 h-full bg-indigo-500"></div>
+      </div>
+    </div>
+    <br><br>
+    <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="images/destination_1.jpg">
+        </div>
+        <h2 class="text-xl font-medium title-font text-gray-900 mt-2">All in 1 Frame</h2>
+        <p class="text-base leading-relaxed mt-1">Dhanesh, Naman, Avishek, Parihaar,...</p>
+        <p class="text-indigo-500 inline-flex items-center mt-1">Green Royal Restaurant</p>
+      </div>
 
-			<div class="row">
-				<div class="col text-center">
-					<div>
-						<p style="font-size: large; font-family: Times New Roman, Times, sans-serif">⚠️If page is not loaded properly, please Reload/Refresh this page👍</p>
-					</div>
-					<div class="section_title"><h3>Some Beautiful Memories caught in Camera on 24th Jan, 2020</h3></div>
-				</div>
-			</div>
+      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="images/destination_2.jpg">
+        </div>
+        <h2 class="text-xl font-medium title-font text-gray-900 mt-2">Enjoying the Day</h2>
+        <p class="text-base leading-relaxed mt-1">OmPrakash, Ashish, Ritesh,...</p>
+        <p class="text-indigo-500 inline-flex items-center mt-1">Green Royal Restaurant</p>
+      </div>
 
-			<div class="row destinations_row">
-				<div class="col">
-					<div class="destinations_container item_grid">
+      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="images/destination_3.jpg">
+        </div>
+        <h2 class="text-xl font-medium title-font text-gray-900 mt-2">Special Persons</h2>
+        <p class="text-base leading-relaxed mt-1">Nilay, TatvaBodh, Gaurav,...</p>
+        <p class="text-indigo-500 inline-flex items-center mt-1">Green Royal Restaurant</p>
+      </div>
 
-						<!-- Destination -->
-						<div class="destination item">
-							<div class="destination_image">
-								<img src="images/destination_1.jpg" alt="">
-								<div class="spec_offer text-center"><a href="#">Best Click</a></div>
-							</div>
-							<div class="destination_content">
-								<div class="destination_title"><a href="#">All in One Frame</a></div>
-								<div class="destination_subtitle"><p>Animesh, Dhanesh, Avishek, Parihaar,...</p></div>
-								<div class="destination_price">Green Royal Restaurant</div>
+      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="images/destination_8.jpg">
+        </div>
+        <h2 class="text-xl font-medium title-font text-gray-900 mt-2">Perfect Click</h2>
+        <p class="text-base leading-relaxed mt-1">Sukhwinder Veere, Shailesh, Kishlay,...</p>
+        <p class="text-indigo-500 inline-flex items-center mt-1">Green Royal Restaurant</p>
+      </div>
 
-							</div>
-						</div>
+      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="images/destination_6.jpg">
+        </div>
+        <h2 class="text-xl font-medium title-font text-gray-900 mt-2">Birthday Night</h2>
+        <p class="text-base leading-relaxed mt-1">Vivek, Ankit, Amresh, Pravin,...</p>
+        <p class="text-indigo-500 inline-flex items-center mt-1">SLIET-Hostel</p>
+      </div>
 
-						<!-- Destination -->
-						<div class="destination item">
-							<div class="destination_image">
-								<img src="images/destination_2.jpg" alt="">
-							</div>
-							<div class="destination_content">
-								<div class="destination_title"><a href="#">Enjoying the day</a></div>
-								<div class="destination_subtitle"><p>Om Prakash, Ashish, Ritesh,...</p></div>
-								<div class="destination_price">Green Royal Restaurant</div>
+      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="images/destination_7.jpg">
+        </div>
+        <h2 class="text-xl font-medium title-font text-gray-900 mt-2">Smiling Faces</h2>
+        <p class="text-base leading-relaxed mt-1">Gaurav, Naman, Bhavesh,...</p>
+        <p class="text-indigo-500 inline-flex items-center mt-1">Green Royal Restaurant</p>
+      </div>
 
-							</div>
-						</div>
+      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="images/destination_5.jpg">
+        </div>
+        <h2 class="text-xl font-medium title-font text-gray-900 mt-2">Apna Swag</h2>
+        <p class="text-base leading-relaxed mt-1"> Rohit, Himanshu, Dhanesh & Rahul</p>
+        <p class="text-indigo-500 inline-flex items-center mt-1">Longowal ki Galiyo me</p>
+      </div>
 
-						<!-- Destination -->
-						<div class="destination item">
-							<div class="destination_image">
-								<img src="images/destination_3.jpg" alt="">
-							</div>
-							<div class="destination_content">
-								<div class="destination_title"><a href="destinations.html">Special Persons</a></div>
-								<div class="destination_subtitle"><p>Tatva Bodh, Nilay, Gaurav, Rohit, Raj,...</p></div>
-								<div class="destination_price">Green Royal Restaurant</div>
-							</div>
-						</div>
+      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="images/raj.jpg">
+        </div>
+        <h2 class="text-xl font-medium title-font text-gray-900 mt-2">Ek Frame me aane ki Koshish</h2>
+        <p class="text-base leading-relaxed mt-1">Govind, Atal, Parth, Raj,...</p>
+        <p class="text-indigo-500 inline-flex items-center mt-1">Longowal</p>
+      </div>
 
-						<!-- Destination -->
-						<div class="destination item">
-							<div class="destination_image">
-								<img src="images/destination_8.jpg" alt="">
-							</div>
-							<div class="destination_content">
-								<div class="destination_title"><a href="#">Perfect Click</a></div>
-								<div class="destination_subtitle"><p>Sukhwinder, Naman, Shailesh, Kishlay,...</p></div>
-								<div class="destination_price">Green Royal Restaurant</div>
-							</div>
-						</div>
+      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="images/destination_4.jpg">
+        </div>
+        <h2 class="text-xl font-medium title-font text-gray-900 mt-2">Friends-Forever</h2>
+        <p class="text-base leading-relaxed mt-1">Nem, Rohit, Ishu, Bhavesh & Ritu</p>
+      </div>
 
-						<!-- Destination -->
-						<div class="destination item">
-							<div class="destination_image">
-								<img src="images/destination_6.jpg" alt="">
-							</div>
-							<div class="destination_content">
-								<div class="destination_title"><a href="#">Birthday Night</a></div>
-								<div class="destination_subtitle"><p>Ankit, Amresh, Pravin,...</p></div>
-								<div class="destination_price">SLIET-Hostel</div>
-							</div>
-						</div>
-
-						<!-- Destination -->
-						<div class="destination item">
-							<div class="destination_image">
-								<img src="images/destination_7.jpg" alt="">
-							</div>
-							<div class="destination_content">
-								<div class="destination_title"><a href="#">Smiling Faces</a></div>
-								<div class="destination_subtitle"><p>Ashish, Nilay, Ritesh, Bhavesh,...</p></div>
-								<div class="destination_price">Green Royal Restaurant</div>
-							</div>
-						</div>
-
-						<!-- Destination -->
-						<div class="destination item">
-							<div class="destination_image">
-								<img src="images/destination_5.jpg" alt="">
-							</div>
-							<div class="destination_content">
-								<div class="destination_title"><a href="#">Apna Swag</a></div>
-								<div class="destination_subtitle"><p>Rohit, Himanshu, Dhanesh, Rahul</p></div>
-								<div class="destination_price">Longowal ki Galiyo me</div>
-							</div>
-						</div>
-
-						<!-- Destination -->
-						<div class="destination item">
-							<div class="destination_image">
-								<img src="images/destination_4.jpg" alt="">
-							</div>
-							<div class="destination_content">
-								<div class="destination_title"><a href="#">Friends Forever</a></div>
-								<div class="destination_subtitle"><p>Nem Singh, Ishant, Bhavesh,..</p></div>
-								<div class="destination_price">SLIET-Hostel</div>
-							</div>
-						</div>
-
-						<!-- Destination -->
-						<div class="destination item">
-							<div class="destination_image">
-								<img src="images/raj.jpg" alt="">
-							</div>
-							<div class="destination_content">
-								<div class="destination_title"><a href="#">Ek frame me aane ki Koshish</a></div>
-								<div class="destination_subtitle"><p>Govind, Atal, Amit, Parth,...</p></div>
-								<div class="destination_price">Green Royal Restaurant</div>
-							</div>
-						</div>
+    </div>
+  </div>
+</section>
 
 
-					</div>
-				</div>
-			</div>
 
+  <!-- Videos -->
 
-			<div class="row">
-				<div class="col text-center">
-					<div class="destination_subtitle"></div>
-					<div class="section_title"><h2>Unforgettable Yaadein</h2></div>
-				</div>
-			</div>
+      <div class="section_title" style="display: flex; justify-content: center;"><h1 style="font-size: xx-large;">Unforgettable Yaadein</h1></div>
 
 			<div class="row destinations_row">
 				<div class="col">
@@ -279,13 +243,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 					</div>
 				</div>
 			</div>
-
-			<div class="row">
-				<div class="col text-center">
-					<div class="destination_subtitle" style="font-size: large; font-family: Times New Roman, Times, sans-serif">⚠️If page is not loaded properly, please Reload/Refresh this page👍</div>
-				</div>
-			</div>
-
 			<div class="row load_more_row">
 				<div class="col">
 					<div class="button load_more_button"><a href="gallery.html">More</a></div>
@@ -293,7 +250,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 			</div>
 		</div>
 	</div>
-
+<br> <br>
 	<!-- Footer -->
 
 	<footer class="footer">
