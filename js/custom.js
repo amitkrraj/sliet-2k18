@@ -20,7 +20,7 @@ $(document).ready(function()
 {
 	"use strict";
 
-	/* 
+	/*
 
 	1. Vars and Inits
 
@@ -56,7 +56,7 @@ $(document).ready(function()
 	initScrolling();
 	initInput();
 
-	/* 
+	/*
 
 	2. Set Header
 
@@ -76,7 +76,7 @@ $(document).ready(function()
 		}
 	}
 
-	/* 
+	/*
 
 	3. Set Menu
 
@@ -127,7 +127,7 @@ $(document).ready(function()
 		menuActive = false;
 	}
 
-	/* 
+	/*
 
 	4. Init Home Slider
 
@@ -150,7 +150,7 @@ $(document).ready(function()
 		}
 	}
 
-	/* 
+	/*
 
 	5. Init Scrolling
 
@@ -171,10 +171,10 @@ $(document).ready(function()
 	    			$(window).scrollTo(target, 1500, {offset: -90, easing: 'easeInOutQuart'});
 	    		});
 	    	});
-		}	
+		}
 	}
 
-	/* 
+	/*
 
 	6. Init Isotope
 
@@ -205,7 +205,7 @@ $(document).ready(function()
 		}
 	}
 
-	/* 
+	/*
 
 	7. Init Testimonials Slider
 
@@ -230,7 +230,7 @@ $(document).ready(function()
 		}
 	}
 
-	/* 
+	/*
 
 	8. Init Input
 
@@ -267,7 +267,7 @@ $(document).ready(function()
 						border.css({'visibility': "hidden", 'opacity': "0"});
 					}
 				});
-				
+
 			});
 		}
 	}

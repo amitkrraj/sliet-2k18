@@ -185,7 +185,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 									<div class="intro_icon"><img src="images/party.svg" alt=""></div>
 									<div class="intro_content">
 										<div class="intro_title">Top Birthday_Parties</div>
-										<div class="intro_subtitle"><p>Rohit+Raj, Naman,.....</p></div>
+										<div class="intro_subtitle"><p>Rohit+Raj bhai, Naman,.....</p></div>
 									</div>
 								</div>
 							</div>
@@ -196,7 +196,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 									<div class="intro_icon"><img src="images/white-wine-glass.png" alt=""></div>
 									<div class="intro_content">
 										<div class="intro_title">Latest Event</div>
-										<div class="intro_subtitle"><p>Birthday Party of Raj+Rohit</p></div>
+										<div class="intro_subtitle"><p>Birthday Party of Rohit+Raj bhai</p></div>
 									</div>
 								</div>
 							</div>
@@ -207,7 +207,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 									<div class="intro_icon"><img src="images/panda.svg" alt=""></div>
 									<div class="intro_content">
 										<div class="intro_title">Amazing or Funny</div>
-										<div class="intro_subtitle"><p>Dancing style of Naman, Nem, Parihaar, Raj....</p></div>
+										<div class="intro_subtitle"><p>Dancing style of Naman, Nem, Parihaar, Raj bhai,...</p></div>
 									</div>
 								</div>
 							</div>
@@ -490,17 +490,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 				<div class="col">
 					<div class="newsletter">
 						<div class="newsletter_title_container text-center">
-							<div class="newsletter_title">Get latest updates of our Events</div>
-							<div class="newsletter_subtitle">Join our database NOW!</div>
-						</div>
-						<div class="newsletter_form_container">
-							<form action="#" class="newsletter_form d-flex flex-md-row flex-column align-items-start justify-content-between" id="newsletter_form">
-								<div class="d-flex flex-md-row flex-column align-items-start justify-content-between">
-									<div><input type="text" class="newsletter_input newsletter_input_name" id="newsletter_input_name" placeholder="Name" required="required"><div class="input_border"></div></div>
-									<div><input type="email" class="newsletter_input newsletter_input_email" id="newsletter_input_email" placeholder="Your e-mail" required="required"><div class="input_border"></div></div>
-								</div>
-								<div><button class="newsletter_button">subscribe</button></div>
-							</form>
+							<div class="newsletter_title">This page is viewed</div>
+							<div><button class="newsletter_button" style="border-radius: 100px;"><h4 id="count_index" style="color: #000; font-size: xx-large; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">0</h4></button></div>
+							<div class="newsletter_title">times (✷‿✷)</div>
 						</div>
 					</div>
 				</div>
@@ -559,6 +551,19 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 </div>
 	</footer>
 </div>
+
+<!-- Count No. of Visits -->
+<script>
+  const countEl = document.getElementById("count_index");
+  countvisits()
+  function countvisits() {
+    fetch('https://api.countapi.xyz/update/sliet-2k18-index/github-sliet-2k18-index/?amount=1')
+      .then((res) => res.json())
+      .then((res) => {
+        countEl.innerHTML = res.value;
+      });
+  }
+</script>
 
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="styles/bootstrap4/popper.js"></script>

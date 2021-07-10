@@ -185,18 +185,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 				<div class="col">
 					<div class="newsletter">
 						<div class="newsletter_title_container text-center">
-						    <div class="newsletter_title">Get latest updates of our Events</div>
-							<div class="newsletter_subtitle">Join our database NOW!</div>
-						</div>
-						<div class="newsletter_form_container">
-							<form action="#" class="newsletter_form d-flex flex-md-row flex-column align-items-start justify-content-between" id="newsletter_form">
-								<div class="d-flex flex-md-row flex-column align-items-start justify-content-between">
-									<div><input type="text" class="newsletter_input newsletter_input_name" id="newsletter_input_name" placeholder="Name" required="required"><div class="input_border"></div></div>
-									<div><input type="email" class="newsletter_input newsletter_input_email" id="newsletter_input_email" placeholder="Your e-mail" required="required"><div class="input_border"></div></div>
-
-								</div>
-								<div><button class="newsletter_button">subscribe</button></div>
-							</form>
+							<div class="newsletter_title">This page is viewed</div>
+							<div><button class="newsletter_button" style="border-radius: 100px;"><h4 id="count_contact" style="color: #000; font-size: xx-large; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">0</h4></button></div>
+							<div class="newsletter_title">times (✷‿✷)</div>
 						</div>
 					</div>
 				</div>
@@ -255,6 +246,18 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> </div>
 	</footer>
 </div>
+<!-- Count No. of Visits -->
+<script>
+  const countEl = document.getElementById("count_contact");
+  countvisits()
+  function countvisits() {
+    fetch('https://api.countapi.xyz/update/sliet-2k18-contact/github-sliet-2k18-contact/?amount=1')
+      .then((res) => res.json())
+      .then((res) => {
+        countEl.innerHTML = res.value;
+      });
+  }
+</script>
 <script defer src="js/mailto.js"></script>
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="styles/bootstrap4/popper.js"></script>
